@@ -9,7 +9,7 @@ for(let i=0;i<dropButton.length;i++){
     })
 }*/
 
-let addDropDownButton = function (buttonName, arrayName) {
+export default function addDropDownButton (buttonName, arrayName) {
     let dropDown = document.createElement('div');
     dropDown.classList.add('drop-down');
     let button = document.createElement('button');
@@ -34,8 +34,6 @@ let addDropDownButton = function (buttonName, arrayName) {
     })
 
 }
-//import css and create function createMenu(buttonname, [array,of,names,inside,a tag],color)
-//compile using webpack and export module
 /*
 <div class="drop-down">
 <button class="drop-button">Menu</button>
@@ -47,4 +45,7 @@ let addDropDownButton = function (buttonName, arrayName) {
 </div>
 */
 
-addDropDownButton('Menu',['Item1','Item3','Item2']);
+//now compile using webpack and export module
+
+//addDropDownButton('Menu',['Item1','Item3','Item2']);
+
